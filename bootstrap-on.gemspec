@@ -10,22 +10,89 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Stuart Chinery"]
   s.date = "2012-07-05"
-  s.description = "TODO: longer description of your gem"
+  s.description = "Padrino admin generators with Twitter Bootstrap integration"
   s.email = "stuart.chinery@headlondon.com"
   s.extra_rdoc_files = [
     "LICENSE.txt",
-    "README.md",
-    "README.rdoc"
+    "README.md"
   ]
   s.files = [
+    ".document",
+    "Gemfile",
+    "Gemfile.lock",
+    "LICENSE.txt",
     "README.md",
-    "VERSION"
+    "Rakefile",
+    "VERSION",
+    "bootstrap-on.gemspec",
+    "lib/bootstrap-on.rb",
+    "lib/bootstrap-on/bs_admin.rb",
+    "lib/bootstrap-on/bs_admin_page.rb",
+    "lib/bootstrap-on/templates/.DS_Store",
+    "lib/bootstrap-on/templates/account/.DS_Store",
+    "lib/bootstrap-on/templates/account/activerecord.rb.tt",
+    "lib/bootstrap-on/templates/account/couchrest.rb.tt",
+    "lib/bootstrap-on/templates/account/datamapper.rb.tt",
+    "lib/bootstrap-on/templates/account/mini_record.rb.tt",
+    "lib/bootstrap-on/templates/account/mongoid.rb.tt",
+    "lib/bootstrap-on/templates/account/mongomapper.rb.tt",
+    "lib/bootstrap-on/templates/account/seeds.rb.tt",
+    "lib/bootstrap-on/templates/account/sequel.rb.tt",
+    "lib/bootstrap-on/templates/app.rb.tt",
+    "lib/bootstrap-on/templates/app/controllers/base.rb",
+    "lib/bootstrap-on/templates/app/controllers/sessions.rb.tt",
+    "lib/bootstrap-on/templates/app/helpers/application_helper.rb",
+    "lib/bootstrap-on/templates/assets/.DS_Store",
+    "lib/bootstrap-on/templates/assets/css/bootstrap-responsive.css",
+    "lib/bootstrap-on/templates/assets/css/bootstrap-responsive.min.css",
+    "lib/bootstrap-on/templates/assets/css/bootstrap.css",
+    "lib/bootstrap-on/templates/assets/css/bootstrap.min.css",
+    "lib/bootstrap-on/templates/assets/ico/apple-touch-icon-114-precomposed.png",
+    "lib/bootstrap-on/templates/assets/ico/apple-touch-icon-144-precomposed.png",
+    "lib/bootstrap-on/templates/assets/ico/apple-touch-icon-57-precomposed.png",
+    "lib/bootstrap-on/templates/assets/ico/apple-touch-icon-72-precomposed.png",
+    "lib/bootstrap-on/templates/assets/ico/favicon.ico",
+    "lib/bootstrap-on/templates/assets/img/glyphicons-halflings-white.png",
+    "lib/bootstrap-on/templates/assets/img/glyphicons-halflings.png",
+    "lib/bootstrap-on/templates/assets/js/.DS_Store",
+    "lib/bootstrap-on/templates/assets/js/bootstrap.js",
+    "lib/bootstrap-on/templates/assets/js/bootstrap.min.js",
+    "lib/bootstrap-on/templates/assets/js/jquery-min.js",
+    "lib/bootstrap-on/templates/assets/js/jquery-ujs.js",
+    "lib/bootstrap-on/templates/assets/js/jquery.js",
+    "lib/bootstrap-on/templates/erb/app/base/index.erb.tt",
+    "lib/bootstrap-on/templates/erb/app/layouts/application.erb.tt",
+    "lib/bootstrap-on/templates/erb/app/sessions/new.erb.tt",
+    "lib/bootstrap-on/templates/erb/page/_form.erb.tt",
+    "lib/bootstrap-on/templates/erb/page/edit.erb.tt",
+    "lib/bootstrap-on/templates/erb/page/index.erb.tt",
+    "lib/bootstrap-on/templates/erb/page/new.erb.tt",
+    "lib/bootstrap-on/templates/haml/app/base/index.haml.tt",
+    "lib/bootstrap-on/templates/haml/app/layouts/application.haml.tt",
+    "lib/bootstrap-on/templates/haml/app/sessions/new.haml.tt",
+    "lib/bootstrap-on/templates/haml/page/_form.haml.tt",
+    "lib/bootstrap-on/templates/haml/page/edit.haml.tt",
+    "lib/bootstrap-on/templates/haml/page/index.haml.tt",
+    "lib/bootstrap-on/templates/haml/page/new.haml.tt",
+    "lib/bootstrap-on/templates/page/controller.rb.tt",
+    "lib/bootstrap-on/templates/slim/app/base/index.slim.tt",
+    "lib/bootstrap-on/templates/slim/app/layouts/application.slim.tt",
+    "lib/bootstrap-on/templates/slim/app/sessions/new.slim.tt",
+    "lib/bootstrap-on/templates/slim/page/_form.slim.tt",
+    "lib/bootstrap-on/templates/slim/page/edit.slim.tt",
+    "lib/bootstrap-on/templates/slim/page/index.slim.tt",
+    "lib/bootstrap-on/templates/slim/page/new.slim.tt",
+    "test/bootstrap-on/test_bs_admin_generator.rb",
+    "test/bootstrap-on/test_bs_admin_page_generator.rb",
+    "test/helper.rb",
+    "test/load_paths.rb",
+    "test/test_bootstrap-on.rb"
   ]
   s.homepage = "http://github.com/sleepingstu/bootstrap-on"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = "1.8.19"
-  s.summary = "TODO: one-line summary of your gem"
+  s.summary = "Padrino admin generators with Twitter Bootstrap integration"
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
@@ -36,12 +103,16 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<bundler>, ["~> 1.1.4"])
       s.add_development_dependency(%q<jeweler>, ["~> 1.8.3"])
       s.add_development_dependency(%q<yard>, ["~> 0.6.0"])
+      s.add_development_dependency(%q<padrino>, [">= 0"])
+      s.add_development_dependency(%q<uuid>, [">= 0"])
     else
       s.add_dependency(%q<minitest>, [">= 0"])
       s.add_dependency(%q<turn>, ["~> 0.9.5"])
       s.add_dependency(%q<bundler>, ["~> 1.1.4"])
       s.add_dependency(%q<jeweler>, ["~> 1.8.3"])
       s.add_dependency(%q<yard>, ["~> 0.6.0"])
+      s.add_dependency(%q<padrino>, [">= 0"])
+      s.add_dependency(%q<uuid>, [">= 0"])
     end
   else
     s.add_dependency(%q<minitest>, [">= 0"])
@@ -49,6 +120,8 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<bundler>, ["~> 1.1.4"])
     s.add_dependency(%q<jeweler>, ["~> 1.8.3"])
     s.add_dependency(%q<yard>, ["~> 0.6.0"])
+    s.add_dependency(%q<padrino>, [">= 0"])
+    s.add_dependency(%q<uuid>, [">= 0"])
   end
 end
 
