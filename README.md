@@ -15,8 +15,7 @@ In a Gemfile:
 gem 'bootstrap-on', :group => :development
 ```
 
-Padrino gotcha: You'll need to put the `gem 'bootstrap-on'` requirement in your Gemfile *after* `gem 'padrino'`.
-bootstrap-on depends on Padrino being loaded before it can do it's stuff.
+Padrino gotcha: You'll need to put the `gem 'bootstrap-on'` requirement in your Gemfile *after* `gem 'padrino'` as it depends on Padrino being loaded so it can attach itself to the Padrino generators.
 
 
 ## Usage
