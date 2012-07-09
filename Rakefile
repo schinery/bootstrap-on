@@ -18,7 +18,7 @@ Jeweler::Tasks.new do |gem|
   gem.homepage = "http://github.com/sleepingstu/bootstrap-on"
   gem.license = "MIT"
   gem.summary = %Q{Padrino admin generators with Twitter Bootstrap integration}
-  gem.description = %Q{Generates Padrino admin and admin pages with Twitter Bootstrap integrated.}
+  gem.description = %Q{Generates Padrino admin and admin page templates with Twitter Bootstrap integrated.}
   gem.email = "stuart.chinery@headlondon.com"
   gem.authors = ["Stuart Chinery"]
   # dependencies defined in Gemfile
