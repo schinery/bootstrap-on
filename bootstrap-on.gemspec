@@ -5,12 +5,12 @@
 
 Gem::Specification.new do |s|
   s.name = "bootstrap-on"
-  s.version = "0.0.2"
+  s.version = "0.0.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Stuart Chinery"]
-  s.date = "2012-07-06"
-  s.description = "Generates Padrino admin and admin pages with Twitter Bootstrap integrated."
+  s.date = "2012-07-09"
+  s.description = "Generates Padrino admin and admin page templates with Twitter Bootstrap integrated."
   s.email = "stuart.chinery@headlondon.com"
   s.extra_rdoc_files = [
     "LICENSE.txt",
