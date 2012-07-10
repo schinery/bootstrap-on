@@ -8,7 +8,7 @@ group :development do
   gem "yard", "~> 0.6.0"
 
   # From Padrino
-  # gem "uuid"
+  gem "uuid"
 end
 
 gem 'padrino'
