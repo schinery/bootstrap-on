@@ -16,7 +16,6 @@ Admin.controllers :<%= @orm.name_plural %> do
       flash[:notice] = "#{mt(<%= @orm.klass_name %>)} was successfully created."
       redirect url(:<%= @orm.name_plural %>, :edit, :id => @<%= @orm.name_singular%>.id)
     else
-      flash.now[:error] = "There were some problems creating this #{mt(<%= @orm.klass_name %>)}."
       render '<%= @orm.name_plural %>/new'
     end
   end
@@ -32,7 +31,6 @@ Admin.controllers :<%= @orm.name_plural %> do
       flash[:notice] = "#{mt(<%= @orm.klass_name %>)} was successfully updated."
       redirect url(:<%= @orm.name_plural %>, :edit, :id => @<%= @orm.name_singular %>.id)
     else
-      flash.now[:error] = "There were some problems updating this #{mt(<%= @orm.klass_name %>)}."
       render '<%= @orm.name_plural %>/edit'
     end
   end

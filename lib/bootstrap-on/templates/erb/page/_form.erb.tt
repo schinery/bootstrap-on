@@ -1,3 +1,11 @@
+<%%= error_messages_for @<%= @orm.name_singular %>,
+  :header_tag => 'h3',
+  :id => "errors",
+  :class => "alert alert-error",
+  :header_message => "",
+  :message => "There were some problems updating this case study."
+%>
+
 <fieldset>
   <% @orm.column_fields.each do |column| %>
   <div class="control-group">
