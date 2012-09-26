@@ -57,7 +57,7 @@ Generates a new Padrino Admin page with Twitter Bootstrapped integrated.
 **Command:**
 
 ```
-padrino g bootstrapped_admin_page [model]
+padrino g bs_admin_page [model]
 ```
 
 **Options:**
@@ -71,7 +71,7 @@ padrino g bootstrapped_admin_page [model]
 **Example:**
 
 ```
-padrino g bootstrapped_admin_page product
+padrino g bs_admin_page product
 ```
 
 
