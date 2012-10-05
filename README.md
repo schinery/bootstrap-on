@@ -5,7 +5,7 @@ Padrino admin generators with Twitter Bootstrap integration
 
 ## Installation
 
-```ruby
+```
 gem install bootstrap-on
 ```
 
