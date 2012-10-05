@@ -20,7 +20,7 @@ Jeweler::Tasks.new do |gem|
   gem.summary = %Q{Padrino admin generators with Twitter Bootstrap integration}
   gem.description = %Q{Generates Padrino admin and admin page templates with Twitter Bootstrap integrated.}
   gem.email = "stuart.chinery@headlondon.com"
-  gem.authors = ["Stuart Chinery"]
+  gem.authors = ["Stuart Chinery", "Dave Hrycyszyn"]
   # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new
