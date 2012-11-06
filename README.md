@@ -1,5 +1,7 @@
 # bootstrap-on
 
+[![Build Status](https://secure.travis-ci.org/sleepingstu/bootstrap-on.png)](http://travis-ci.org/sleepingstu/bootstrap-on)
+
 Padrino admin generators with Twitter Bootstrap integration
 
 
