@@ -3,7 +3,7 @@
   :id => "errors",
   :class => "alert alert-error",
   :header_message => "",
-  :message => "There were some problems updating this case study."
+  :message => "There were some problems updating this <%= @orm.name_singular %>."
 %>
 
 <fieldset>
@@ -19,6 +19,6 @@
 
   <div class="form-actions">
     <%%= f.submit pat(:save), :class => "btn btn-primary" %>
-    <%%= f.submit pat(:cancel), :onclick => "window.location='#{url(:<%= @orm.name_plural %>, :index)}';return false", :class => "btn" %>
+    <%%= f.submit pat(:cancel), :onclick => "window.location='#{url(:<%= @orm.name_plural %>, :index)}'; return false", :class => "btn" %>
   </div>
 </fieldset>
