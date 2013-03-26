@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "bootstrap-on"
-  s.version = "0.0.7"
+  s.version = "0.0.8"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Stuart Chinery"]
-  s.date = "2012-10-02"
+  s.authors = ["Stuart Chinery", "Dave Hrycyszyn"]
+  s.date = "2013-03-26"
   s.description = "Generates Padrino admin and admin page templates with Twitter Bootstrap integrated."
   s.email = "stuart.chinery@headlondon.com"
   s.extra_rdoc_files = [
@@ -18,6 +18,7 @@ Gem::Specification.new do |s|
   ]
   s.files = [
     ".document",
+    ".travis.yml",
     "Gemfile",
     "Gemfile.lock",
     "LICENSE.txt",
@@ -91,7 +92,7 @@ Gem::Specification.new do |s|
   s.homepage = "http://github.com/sleepingstu/bootstrap-on"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = "1.8.19"
+  s.rubygems_version = "1.8.24"
   s.summary = "Padrino admin generators with Twitter Bootstrap integration"
 
   if s.respond_to? :specification_version then
